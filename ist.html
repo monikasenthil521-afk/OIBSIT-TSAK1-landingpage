@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Marvel Theme UI</title>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Poppins;
+      background: #0B0B0B;
+      color: white;
+    }
+
+    /* NAVBAR */
+    .navbar {
+      background: #ED1D24;
+      padding: 15px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-family: 'Bebas Neue';
+      letter-spacing: 2px;
+    }
+
+    .navbar h2 {
+      font-size: 30px;
+    }
+
+    .navbar a {
+      color: white;
+      text-decoration: none;
+      margin-left: 20px;
+      font-size: 18px;
+    }
+
+    /* HERO */
+    .hero {
+      text-align: center;
+      padding: 80px 20px;
+    }
+
+    .hero h1 {
+      font-family: 'Bebas Neue';
+      font-size: 60px;
+      color: #ED1D24;
+    }
+
+    .hero p {
+      margin: 15px 0;
+      font-size: 16px;
+      color: #ccc;
+    }
+
+    .btn {
+      background: #ED1D24;
+      padding: 12px 30px;
+      border: none;
+      border-radius: 6px;
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+      box-shadow: 0 0 12px #ED1D24;
+    }
+
+    /* CARDS */
+    .cards {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      padding: 40px;
+    }
+
+    .card {
+      background: #1F1F1F;
+      width: 220px;
+      margin: 15px;
+      padding: 20px;
+      border-radius: 12px;
+      text-align: center;
+      box-shadow: 0 0 15px rgba(255,0,0,0.3);
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+    }
+
+    .card h3 {
+      font-family: 'Bebas Neue';
+      font-size: 26px;
+      color: #F5C542;
+    }
+
+    /* REGISTER */
+    .register {
+      background: #111;
+      padding: 40px;
+      text-align: center;
+    }
+
+    .register h2 {
+      font-family: 'Bebas Neue';
+      color: #ED1D24;
+      font-size: 36px;
+    }
+
+    .register input {
+      width: 250px;
+      padding: 10px;
+      margin: 10px;
+      border-radius: 6px;
+      border: none;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <div class="navbar">
+    <h2>MARVEL</h2>
+    <div>
+      <a href="#">Home</a>
+      <a href="#">Heroes</a>
+      <a href="#">Movies</a>
+      <a href="#">Register</a>
+    </div>
+  </div>
+
+  <!-- HERO SECTION -->
+  <div class="hero">
+    <h1>AVENGERS ASSEMBLE</h1>
+    <p>Enter the Marvel Cinematic Universe</p>
+    <button class="btn">Explore Now</button>
+  </div>
+
+  <!-- HERO CARDS -->
+  <div class="cards">
+    <div class="card">
+      <h3>Iron Man</h3>
+      <p>Genius. Billionaire.</p>
+    </div>
+    <div class="card">
+      <h3>Thor</h3>
+      <p>God of Thunder</p>
+    </div>
+    <div class="card">
+      <h3>Spider-Man</h3>
+      <p>Friendly Neighbor</p>
+    </div>
+  </div>
+
+  <!-- REGISTER -->
+  <div class="register">
+    <h2>Join Avengers</h2>
+    <input type="text" placeholder="Name"><br>
+    <input type="email" placeholder="Email"><br>
+    <input type="password" placeholder="Password"><br>
+    <button class="btn">Register</button>
+  </div>
+
+</body>
+</html>
